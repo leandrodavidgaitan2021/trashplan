@@ -1,0 +1,352 @@
+
+
+
+
+:root {
+    --colorfondo: black;
+    --fondonav: #f0f0f0;
+    --fondoLink: #0fb0d3;
+    --azulclaro: skyblue;
+    --black: #000000;
+    --colorIcono: #0fb0d3;
+    --bordeIcono: #000000;
+    --colorLetraLogo: #ffffff;
+    --danger: #skyblue;
+    --grey: #8E8E8E;
+    --white: #FFFFFF;
+    --colorLetraLink: #FFFFFF;
+    --letraLinkHover: blue;
+    --letraLinkActivo: black;
+    --fondoFooter: #222;
+
+}
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+/*estilo de letra del body*/
+body{
+    font-family: arial;
+    background: var(--colorfondo); /*color fondo body*/
+}
+
+/*saca margin y padding*/
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*saca el estilo a los list-items*/
+li{
+    list-style: none; 
+}
+
+/*saca el subrayado de los link a*/
+a{
+    text-decoration: none; 
+}
+
+
+/* -----------INICIO barra navegacion-------------------*/
+/* color fondo barra entera */
+.navbar{
+    background: var(--fondonav);
+}
+
+/*encabezado menu: logo y botones open y close*/ 
+.navbar-header{
+    padding: 1rem;
+    display: flex; /*coloca uno al lado del otro*/
+    justify-content: space-between; /*justifica separando logo y botones*/
+    align-items: center; /*centrado de forma vertical y horizontal*/
+    border-bottom: 1px solid var(--grey); /*borde botones open y close*/
+}
+/* menu mobile */
+.navbar-menu-mobile{
+    /*color y borde de botones open y close*/
+    color: var(--colorIcono);
+    border: 1px solid var(--bordeIcono);
+    /*padding: 6px; para que los botones sean iguales de tamaño*/
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*tamaño logo*/
+.brand-link img{
+    width: 400px;
+    max-height: 45%;
+    max-width: 45%;
+}
+/*contenedor menu desplegado con opciones*/
+.navbar-container{
+    position: absolute; /*lo saca de su contenedor*/
+    background: var(--fondoLink); /*color de fondo*/
+    width: 100%;  /*ocupa todo el ancho*/
+    display: flex; /*coloca todas la opciones en un linea una pegada a la otras*/
+    justify-content: space-around; /*separa equitativamente los link a lo largo de su contenedor*/
+    align-items: center; /*centrado de forma vertical y horizontal*/
+    flex-direction: column; /*coloca las opciones menu en columna*/
+    /*height: 300px; *//*le da un alto del menu opciones*/
+    height: 0px; /*oculta menu*/
+    overflow: hidden;
+    transition: height 0.4s ease; /*transicion mas suave al desplegar height(alto) del menu*/
+}
+/*letras link menu */
+.navbar-link{
+    font-size: 1.5rem;
+    color: var(--colorLetraLink);
+}
+/*link menu hover*/
+.navbar-link:hover {
+    color: var(--letraLinkHover);
+}
+/*------------ MENU ACTIVO --------*/
+.navbar-link-active {
+    color: var(--letraLinkActivo);
+}
+/*----deplegar menu con los link al presionar en boton open-------*/
+#navbar-header:target .navbar-container{
+    height: 300px;
+}
+/*---- oculta boton menu desplegar  ----------*/
+#navbar-header:target .open {
+    display: none;
+}
+/*---- oculta boton menu cerrar ----------*/
+#navbar-header:target .close {
+    display: flex;
+}
+/*---- por defecto boton menu cerrar ----------*/
+.close {
+    display: none;
+}
+/* -------------------------FIN barra navegacion-------------------*/
+
+
+
+
+/* -------------------------INICIO INDEX-Section-Principal-------------------*/
+/* alinea todo al centro*/
+.section-principal, .div-logo, .texto-bg  {
+    align-items: center;
+    text-align: center;
+}
+
+.fondo, .fondo img{
+    margin: 0;
+    text-align: center;
+    height: 250px;
+}
+
+
+.div-logo{
+    height: 175px;
+}
+
+.div-logo img {
+    max-height: 75%;
+    max-width: 75%;
+}
+
+
+.texto-bg p {
+    color: rgb(179, 185, 206);
+    margin: 20px 60px;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+}
+/*-----------------------------------FIN-INDEX Section-Principal------------------------------------*/
+
+.linea {
+    border-top: 1px solid red;
+    height: 2px;
+    max-width: 100%;
+    padding: 10;
+    margin: 20px auto 20px auto;
+}
+
+
+
+
+
+
+/*-----------------------------------INICIO-VIDEOS------------------------------------*/
+.galeria , h2, p{
+    color: indianred;
+    align-items: center;
+    text-align: center;
+}
+
+.videos iframe{
+    margin: 50px 0 50px 0;
+    width: 50%;
+    height: 50%;
+}
+
+
+/*-----------------------------------FIN-VIDEOS------------------------------------*/
+
+
+
+
+/*-----------------------------------INICIO-CONCIERTOS------------------------------------*/
+#conciertos, .volver  {
+    font-size: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+#conciertos a {
+    display: block;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.concierto {
+    background: navajowhite;
+    align-items: center;
+    text-align: center;
+}
+.concierto h2{
+    color: navy;
+}
+.photos img{
+    display: block;
+    width: 75%;
+    margin: auto;
+    padding: auto;
+}
+#bannerProximo {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+/*-----------------------------------FIN-CONCIERTOS------------------------------------*/
+
+
+/*-----------------------------------INICIO-LA BANDA------------------------------------*/
+
+#historia, #integrantes, .nosotros  {
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+
+}
+#historia p {
+    font-family: 'Franklin Gothic Medium';
+    color: var(--colorLetraLogo);
+    padding: 0 10px 20px 10px;
+}
+.photos-integrantes img{
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+}
+
+.photos-integrantes h3{
+    padding: 40px 0 10px 0;
+}
+
+.photos-integrantes p{
+    display: none;
+}
+
+/*-----------------------------------FIN-LA BANDA------------------------------------*/
+
+
+
+
+
+
+
+/*--------------------- inicio  footer ----------------------------*/
+footer {
+    margin-top: 15px;
+    background: var(--fondoFooter);
+}
+
+ul.contacto {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul.contacto li {
+    color: #fcfbfb;
+    padding: 5px 30px;
+    font-size: 18px;
+}
+
+ul.contacto li a {
+    padding-right: 16px;
+    color: #fcfbfb;
+    margin-top: 14px;
+}
+
+ul.social_link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+ul.social_link li {
+    display: inline-block;
+    padding-right: 4px;
+    margin: 0px 4px;
+}
+
+ul.social_link li a {
+    font-size: 24px;
+    color: #161616;
+    background: #0fb0d3;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 41px;
+    justify-content: center;
+}
+
+ul.social_link li a:hover {
+    color: #fff;
+}
+
+
+.copyright {
+    padding: 23px 0px;
+    margin-top: 25px;
+    border-top: #ddd solid 1px;
+}
+
+.copyright p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.copyright a {
+    color: #fff;
+}
+
+.copyright a:hover {
+    color: #0fb0d3;
+}
+/*--------------------- FIN footer ----------------------------*/
+
+
+
+
+
+
+
+
+

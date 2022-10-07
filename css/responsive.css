@@ -19,20 +19,25 @@
         height: auto; /*se ajusta a su contenido*/
         flex-direction: row; /*para cambiar el menu de columna a fila*/
         position: static; /*saca la posicion absoluta del mobile first*/
-        width: 60%; /*achica tamaño menubar*/
+        width: 65%; /*achica tamaño menubar*/
     }
+    /*tamaño logo*/
     .brand-link img{
-        width: 300px;
-        max-height: 85%;
-        max-width: 85%;
+        max-height: 100%;
+        max-width: 100%;
     }
-
 /*------ FIN MENU NAV------*/
+
+/*---INICIO index----*/
     .fondo, .fondo img{
-        margin: 0;
-        text-align: center;
-        height: 350px;
+        height: 500px;
+    }
+    .texto-bg p {
+        margin: 20px 90px;
+        font-size: 25px;
     }    
+/*---FIN index----*/
+
 
     .conciertos {
         font-size: 1.5em;
@@ -53,13 +58,6 @@
         margin: auto;
     }
     
-    .div-logo{
-        height: 250px;
-    }
-    .div-logo img {
-        max-height: 100%;
-        max-width: 100%;
-    }
     .photos-integrantes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -73,12 +71,12 @@
 
     .photos-integrantes p{
         display: flex;
+        padding: 5px 20px;
+        align-items: center;
+        text-align: center;
     }
     
-    .texto-bg p {
-        margin: 20px 90px;
-        font-size: 30px;
-    }
+    
     #historia p {
         padding: 0 60px 20px 60px;
         font-size: 20px;

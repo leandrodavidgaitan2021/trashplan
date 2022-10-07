@@ -79,8 +79,8 @@ a{
 /*tamaño logo*/
 .brand-link img{
     width: 400px;
-    max-height: 45%;
-    max-width: 45%;
+    max-height: 75%;
+    max-width: 75%;
 }
 /*contenedor menu desplegado con opciones*/
 .navbar-container{
@@ -130,37 +130,28 @@ a{
 
 
 
-/* -------------------------INICIO INDEX-Section-Principal-------------------*/
+/* -------------------------INICIO INDEX-------------------*/
 /* alinea todo al centro*/
-.section-principal, .div-logo, .texto-bg  {
+.fondo, .fondo img{
+    margin: 15px;
+    text-align: center;
+    height: 350px;
+}
+.texto-bg  {
     align-items: center;
     text-align: center;
 }
-
-.fondo, .fondo img{
-    margin: 0;
-    text-align: center;
-    height: 250px;
-}
-
-
-.div-logo{
-    height: 175px;
-}
-
-.div-logo img {
-    max-height: 75%;
-    max-width: 75%;
-}
-
 
 .texto-bg p {
     color: rgb(179, 185, 206);
     margin: 20px 60px;
     font-family: 'Franklin Gothic Medium';
-    font-size: 20px;
+    font-size: 15px;
 }
-/*-----------------------------------FIN-INDEX Section-Principal------------------------------------*/
+/*-----------------------------------FIN-INDEX------------------------------------*/
+
+
+
 
 .linea {
     border-top: 1px solid red;

@@ -233,6 +233,10 @@ a{
     color: var(--colorLetraLogo);
     padding: 0 10px 20px 10px;
 }
+#historia a {
+    color: red;
+    text-decoration: underline;
+}
 .photos-integrantes img{
     display: block;
     width: 60%;

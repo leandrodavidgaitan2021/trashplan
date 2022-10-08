@@ -1,7 +1,8 @@
 
 /*---media query para tablet a partir de los 760px---*/
 @media (min-width: 760px) {
-/*------ INICIO MENU NAV------*/
+
+    /*------ INICIO MENU NAV------*/
     /*contenedor principal*/
     .navbar {
         display: flex;
@@ -13,7 +14,6 @@
         display: none;
     }
 
-
     /*cambia altura menubar-container*/
     .navbar-container {
         height: auto; /*se ajusta a su contenido*/
@@ -21,14 +21,18 @@
         position: static; /*saca la posicion absoluta del mobile first*/
         width: 65%; /*achica tamaño menubar*/
     }
+
     /*tamaño logo*/
     .brand-link img{
         max-height: 100%;
         max-width: 100%;
     }
-/*------ FIN MENU NAV------*/
+    /*------ FIN MENU NAV------*/
 
-/*---INICIO index----*/
+
+
+
+    /*---INICIO index----*/
     .fondo, .fondo img{
         height: 500px;
     }
@@ -36,13 +40,17 @@
         margin: 20px 90px;
         font-size: 25px;
     }    
-/*---FIN index----*/
+    /*---FIN index----*/
 
 
+    /*---INICIO Conciertos----*/
     .conciertos {
         font-size: 1.5em;
     }
-    
+    #bannerProximo {
+        width: 450px;
+        margin: auto;
+    }    
     .photos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -53,11 +61,14 @@
     .photos img:hover {
         transform: scale(1.50);
     }
-    #bannerProximo {
-        width: 450px;
-        margin: auto;
+    /*---FIN Conciertos----*/    
+
+    /*----INICIO La Banda----- */  
+    #historia p {
+        padding: 0 60px 20px 60px;
+        font-size: 20px;
     }
-    
+
     .photos-integrantes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -75,18 +86,28 @@
         align-items: center;
         text-align: center;
     }
-    
-    
-    #historia p {
-        padding: 0 60px 20px 60px;
-        font-size: 20px;
-    }
+
+    /*----FIN La Banda----- */  
+
+
+    /*--- INICIO videos youtube*/
     .videos iframe{
         margin: 50px 0 50px 0;
         width: 560px;
         height: 315px;
         align-items: center;
     }
+    /*--- FIN videos youtube*/
+
+    /*----INICO Contacto ---*/
+    .whatsappLink.movile {
+        display: none;
+    }
+    .whatsappLink.desktop{
+        display: inline;
+    }
+    /*----FIN Contacto ---*/
 
 
 }
+/*---FIN media query para tablet a partir de los 760px---*/

@@ -253,13 +253,14 @@ a{
 }
 
 /*-----------------------------------FIN-LA BANDA------------------------------------*/
-
-
-
-
-
-
-
+ 
+/*---- INICIO contactos-----*/
+.link-contactos{
+    color: blue;
+}
+.whatsappLink.desktop{
+    display: none;
+  }
 /*--------------------- inicio  footer ----------------------------*/
 footer {
     margin-top: 15px;

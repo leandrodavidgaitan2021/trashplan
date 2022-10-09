@@ -193,7 +193,8 @@ a{
 }
 
 #conciertos a {
-    display: block;
+    color: #FFFFFF;
+    display: inline-flex;
     padding: 5px;
     text-decoration: underline;
 }
@@ -217,6 +218,7 @@ a{
     align-items: center;
     text-align: center;
 }
+
 /*-----------------------------------FIN-CONCIERTOS------------------------------------*/
 
 
@@ -260,7 +262,7 @@ a{
 }
 .whatsappLink.desktop{
     display: none;
-  }
+}
 /*--------------------- inicio  footer ----------------------------*/
 footer {
     margin-top: 15px;

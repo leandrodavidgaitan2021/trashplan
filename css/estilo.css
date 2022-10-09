@@ -200,6 +200,7 @@ a{
 }
 
 .concierto {
+    padding: 5px;
     background: navajowhite;
     align-items: center;
     text-align: center;
@@ -257,12 +258,17 @@ a{
 /*-----------------------------------FIN-LA BANDA------------------------------------*/
  
 /*---- INICIO contactos-----*/
+
+
 .link-contactos{
     color: blue;
+    text-align: center;
 }
 .whatsappLink.desktop{
     display: none;
 }
+
+
 /*--------------------- inicio  footer ----------------------------*/
 footer {
     margin-top: 15px;

@@ -3,22 +3,24 @@
 
 
 :root {
-    --colorfondo: black;
-    --fondonav: #f0f0f0;
-    --fondoLink: #0fb0d3;
+    --colorfondo:grey;  /*1*/
+    --fondonav: #000000; /*1*/
+    --fondoLink: #0fb0d3; /*1*/
     --azulclaro: skyblue;
-    --black: #000000;
-    --colorIcono: #0fb0d3;
-    --bordeIcono: #000000;
+    --letraP: #000000;
+    --colorBoton: #0fb0d3; /*1*/
+    --bordeIcono: #000000; /*1*/
     --colorLetraLogo: #ffffff;
-    --danger: #skyblue;
-    --grey: #8E8E8E;
-    --white: #FFFFFF;
-    --colorLetraLink: #FFFFFF;
-    --letraLinkHover: blue;
-    --letraLinkActivo: black;
-    --fondoFooter: #222;
-
+    --colorLetraLink: #FFFFFF; /*1*/
+    --letraLinkHover: blue; /*1*/
+    --letraLinkActivo: black; /*1*/
+    --fondoFooter: #000000;
+    --colorLinea: red; /*1*/
+    --colorGaleria: blue; /*1*/
+    --colorConciertosA: yellow; /*1*/
+    --colorConcierto: green; /*1*/
+    --colorConciertoH2: navy; /*1*/
+    --colorHistoriaA:#000000; /*1*/
 }
 
 *,
@@ -58,17 +60,16 @@ a{
 
 /*encabezado menu: logo y botones open y close*/ 
 .navbar-header{
-    padding: 1rem;
+    /*padding: 1rem;*/
     display: flex; /*coloca uno al lado del otro*/
     justify-content: space-between; /*justifica separando logo y botones*/
     align-items: center; /*centrado de forma vertical y horizontal*/
-    border-bottom: 1px solid var(--grey); /*borde botones open y close*/
+    /*border-bottom: 1px solid var(--grey);*/ /*borde botones open y close*/
 }
 /* menu mobile */
 .navbar-menu-mobile{
-    /*color y borde de botones open y close*/
-    color: var(--colorIcono);
-    border: 1px solid var(--bordeIcono);
+    color: var(--colorBoton);/*color de botones open y close*/
+    /*border: 1px solid var(--bordeIcono);*/ /*borde de botones open y close*/
     /*padding: 6px; para que los botones sean iguales de tamaño*/
     width: 40px;
     height: 40px;
@@ -78,6 +79,7 @@ a{
 }
 /*tamaño logo*/
 .brand-link img{
+    margin: 5px;
     width: 400px;
     max-height: 75%;
     max-width: 75%;
@@ -143,7 +145,7 @@ a{
 }
 
 .texto-bg p {
-    color: rgb(179, 185, 206);
+    color: var(--letraP);
     margin: 20px 60px;
     font-family: 'Franklin Gothic Medium';
     font-size: 15px;
@@ -154,7 +156,7 @@ a{
 
 
 .linea {
-    border-top: 1px solid red;
+    border-top: 1px solid var(--colorLinea);
     height: 2px;
     max-width: 100%;
     padding: 10;
@@ -168,7 +170,7 @@ a{
 
 /*-----------------------------------INICIO-VIDEOS------------------------------------*/
 .galeria , h2, p{
-    color: indianred;
+    color: var(--colorGaleria);
     align-items: center;
     text-align: center;
 }
@@ -193,7 +195,7 @@ a{
 }
 
 #conciertos a {
-    color: #FFFFFF;
+    color: var(--colorConciertosA);
     display: inline-flex;
     padding: 5px;
     text-decoration: underline;
@@ -201,12 +203,12 @@ a{
 
 .concierto {
     padding: 5px;
-    background: navajowhite;
+    background: var(--colorConcierto);;
     align-items: center;
     text-align: center;
 }
 .concierto h2{
-    color: navy;
+    color: var(--colorConciertoH2);
 }
 .photos img{
     display: block;
@@ -237,7 +239,7 @@ a{
     padding: 0 10px 20px 10px;
 }
 #historia a {
-    color: red;
+    color: var(--colorHistoriaA);
     text-decoration: underline;
 }
 .photos-integrantes img{

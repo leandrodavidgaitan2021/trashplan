@@ -176,9 +176,10 @@ a{
 }
 
 .videos iframe{
-    margin: 50px 0 50px 0;
-    width: 50%;
-    height: 50%;
+    margin: 25px 0 25px 0;
+    width: 250;
+    height: auto;
+
 }
 
 

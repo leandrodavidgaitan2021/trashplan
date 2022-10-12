@@ -1,25 +1,19 @@
 
-
-
-
 :root {
     --colorfondo:grey;  /*1*/
     --fondonav: #000000; /*1*/
     --fondoLink: #0fb0d3; /*1*/
-    --azulclaro: skyblue;
-    --letraP: #000000;
+    --fondoConciertos: #ffffffad;
+
     --colorBoton: #0fb0d3; /*1*/
     --bordeIcono: #000000; /*1*/
-    --colorLetraLogo: #ffffff;
+
     --colorLetraLink: #FFFFFF; /*1*/
     --letraLinkHover: blue; /*1*/
     --letraLinkActivo: black; /*1*/
     --fondoFooter: #000000;
     --colorLinea: red; /*1*/
     --colorGaleria: blue; /*1*/
-    --colorConciertosA: yellow; /*1*/
-    --colorConcierto: green; /*1*/
-    --colorConciertoH2: navy; /*1*/
     --colorHistoriaA:#000000; /*1*/
 }
 
@@ -152,9 +146,6 @@ a{
 }
 /*-----------------------------------FIN-INDEX------------------------------------*/
 
-
-
-
 .linea {
     border-top: 1px solid var(--colorLinea);
     height: 2px;
@@ -188,39 +179,114 @@ a{
 
 
 
-/*-----------------------------------INICIO-CONCIERTOS------------------------------------*/
-#conciertos, .volver  {
-    font-size: 1em;
-    align-items: center;
+
+/*---------------INICIO conciertos*/
+#conciertos {
+    background: var(--fondoConciertos) ; /* fondo galleria conciertos*/
+    max-width: auto;
+    margin: 1rem auto;
+    padding: 0 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 15px 15px -12px rgba(0, 0, 0, 0.35);
     text-align: center;
+    border-radius: 3px;
+}
+figure#filtro {
+    margin: 0 0 15px;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 10px;
+}
+figure#filtro img {
+    width: 0px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 15px 15px -12px rgba(0, 0, 0, 0.55);
+    border-top: 1px solid #e0e0e0;
+    -webkit-transition: 1s;
+    transition: 1s;
 }
 
-#conciertos a {
-    color: var(--colorConciertosA);
-    display: inline-flex;
-    padding: 5px;
-    text-decoration: underline;
+input#proximo:checked ~ figure img.proximo {
+    width: 550px;
+}
+input#proximo:checked ~ figure img:not(.proximo) {
+    opacity: 0; 
+    position: absolute; 
+    top: 0; 
+    left: 50%;
+} 
+input#limbopub22:checked ~ figure img.limbopub22 {
+    width: 550px;
+}
+input#limbopub22:checked ~ figure img:not(.limbopub22) { 
+    opacity: 0; 
+    position: absolute;  
+    top: 0; 
+    left: 50%;
+} 
+input#clubsocial22:checked ~ figure img.clubsocial22 { 
+    width: 550px;
+}
+input#clubsocial22:checked ~ figure img:not(.clubsocial22) {
+    opacity: 0;  
+    position: absolute;  
+    top: 0; 
+    left: 50%;
+}  
+input#juanlortiz21:checked ~ figure img.juanlortiz21 { 
+    width: 550px; 
+}
+input#juanlortiz21:checked ~ figure img:not(.juanlortiz21) { 
+    opacity: 0;  
+    position: absolute;  
+    top: 0; 
+    left: 50%;
+} 
+input#x:checked ~ figure img { 
+    width:0; 
+    opacity:0; 
+    transition: .5s;
+}
+       
+input[type=radio] { 
+    display: none; 
+}
+label {
+    position: relative;
+    padding:.5rem;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0,0,0,.1);
+    display: inline-block;
+    margin: 15px 1px 0 0;
+    background: #eee;
+}
+label:hover {
+    cursor: pointer; 
+    background: #e5e5e5; 
+    color: var(--letraLinkHover); 
+    transition: .4s;
+}
+input#x + label {
+    padding:5px; 
+    border-radius: 50%; 
+    background: #eee; 
+    color: #999; 
+    font-size: 1.5rem; 
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 5px 8px -4px rgba(0, 0, 0, 0.45) inset; 
 }
 
-.concierto {
-    padding: 5px;
-    background: var(--colorConcierto);;
-    align-items: center;
-    text-align: center;
+input#x + label:hover, input#x:checked + label {
+    background: var(--letraLinkHover); 
+    color: #fff; 
+    transition: .4s;
 }
-.concierto h2{
-    color: var(--colorConciertoH2);
-}
-.photos img{
-    display: block;
-    width: 75%;
-    margin: auto;
-    padding: auto;
-}
-#bannerProximo {
-    width: 100%;
-    align-items: center;
-    text-align: center;
+input:checked + label { 
+    background: rgba(0, 0, 0, 0.25); 
+    text-shadow: 0 0 1px #222222; 
+    color: #fff; 
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 5px 8px -4px rgba(0, 0, 0, 0.45); 
+    border-color: #fff;
 }
 
 /*-----------------------------------FIN-CONCIERTOS------------------------------------*/
@@ -259,10 +325,10 @@ a{
 }
 
 /*-----------------------------------FIN-LA BANDA------------------------------------*/
- 
+
+
+
 /*---- INICIO contactos-----*/
-
-
 .link-contactos{
     color: blue;
     text-align: center;
@@ -348,12 +414,3 @@ ul.social_link li a:hover {
     color: #0fb0d3;
 }
 /*--------------------- FIN footer ----------------------------*/
-
-
-
-
-
-
-
-
-

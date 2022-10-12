@@ -41,27 +41,7 @@
         font-size: 25px;
     }    
     /*---FIN index----*/
-
-
-    /*---INICIO Conciertos----*/
-    .conciertos {
-        font-size: 1.5em;
-    }
-    #bannerProximo {
-        width: 450px;
-        margin: auto;
-    }    
-    .photos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 900px;
-        grid-gap: 6px;
-        margin: auto;
-    }    
-    .photos img:hover {
-        transform: scale(1.50);
-    }
-    /*---FIN Conciertos----*/    
+ 
 
 
     /*----INICIO La Banda----- */  

@@ -46,8 +46,8 @@
 
     /*----INICIO La Banda----- */  
     #historia p {
-        padding: 0 60px 20px 60px;
-        font-size: 20px;
+        padding: 0 50px 20px 60px;
+        font-size: 25px;
     }
 
     .photos-integrantes {
@@ -65,7 +65,7 @@
         display: flex;
         padding: 5px 20px;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     /*----FIN La Banda----- */  

@@ -14,7 +14,7 @@
     --fondoFooter: #000000;
     --colorLinea: red; /*1*/
     --colorGaleria: blue; /*1*/
-    --colorHistoriaA:#000000; /*1*/
+    --colorHistoriaA:#6a72eb; /*1*/
 }
 
 *,
@@ -307,7 +307,7 @@ input:checked + label {
 }
 #historia p {
     font-family: 'Franklin Gothic Medium';
-    color: var(--colorLetraLogo);
+    color: var(--colorLetraLink );
     padding: 0 10px 20px 10px;
 }
 #historia a {
@@ -327,6 +327,7 @@ input:checked + label {
 
 .photos-integrantes p{
     display: none;
+    color: #999;
 }
 
 /*-----------------------------------FIN-LA BANDA------------------------------------*/

@@ -13,7 +13,7 @@
     --letraLinkActivo: black; /*1*/
     --fondoFooter: #000000;
     --colorLinea: red; /*1*/
-    --colorGaleria: blue; /*1*/
+    --colorGaleria: #FFFFFF; /*1*/
     --colorHistoriaA:#6a72eb; /*1*/
 }
 
@@ -165,9 +165,13 @@ a{
 
 /*-----------------------------------INICIO-VIDEOS------------------------------------*/
 .galeria , h2, p{
+    padding-top: 10px;
     color: var(--colorGaleria);
     align-items: center;
     text-align: center;
+}
+
+
 }
 
 .videos iframe{
